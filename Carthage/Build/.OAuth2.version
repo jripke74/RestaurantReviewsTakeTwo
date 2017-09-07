@@ -1,0 +1,9 @@
+{
+  "commitish" : "3.0.3",
+  "iOS" : [
+    {
+      "hash" : "64bb50550945fa10fbfb319da3207f2d67489c5f265ca8a0cd51bb205f5bc2ff",
+      "name" : "OAuth2"
+    }
+  ]
+}
