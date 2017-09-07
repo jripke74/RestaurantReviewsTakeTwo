@@ -141,19 +141,3 @@ class PermissionsController: UIViewController {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

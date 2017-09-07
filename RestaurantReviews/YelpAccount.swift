@@ -30,7 +30,10 @@ extension YelpAccount {
     }
     
     static func loadFromKeychain() -> YelpAccount? {
-        guard let dictionary = Locksmith.loadDataForUserAccount(userAccount: YelpAccount.service), let token = dictionary[Keys.token] as? String, let expiration = dictionary[Keys.expirationPeriod] as? TimeInterval, let grantDateValue = dictionary[Keys.grantDate] as? TimeInterval else {
+        guard let dictionary = Locksmith.loadDataForUserAccount(userAccount: YelpAccount.service),
+            let token = dictionary[Keys.token] as? String,
+            let expiration = dictionary[Keys.expirationPeriod] as? TimeInterval,
+            let grantDateValue = dictionary[Keys.grantDate] as? TimeInterval else {
             return nil
         }
         
@@ -39,22 +42,3 @@ extension YelpAccount {
         return YelpAccount(accessToken: token, expiration: expiration, grantDate: grantDate)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
